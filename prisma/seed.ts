@@ -9,6 +9,7 @@ async function main() {
     create: {
       email: 'test@test.com',
       name: 'Test User',
+      slug: 'test-user',
       password: `$2y$12$GBfcgD6XwaMferSOdYGiduw3Awuo95QAPhxFE0oNJ.Ds8qj3pzEZy` // test Password is "password"
      }
   })
