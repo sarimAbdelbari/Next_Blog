@@ -1,6 +1,6 @@
 import prisma from "@/lib/db";
 import Link from "next/link";
-import Create from "@/app/dashboard/Users/(CRUD)/Create";
+import Create from "@/app/components/userForm";
 export default async function Home() {
   
 
