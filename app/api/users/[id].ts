@@ -26,7 +26,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 if (req.method === "DELETE") {
     try {
         await prisma.user.delete({ where: { id: String(id) } });
-        return res.status(204).end();
+        return res.status(204).json({ message: "User deleted successfully." });
     } catch (error) {
       console.error(error)
       return res.status(500).json({ error: "Failed to delete user" });

@@ -11,7 +11,7 @@ datasource db {
 model User {
   
   id        String   @id @default(uuid()) // Changed from Int to String and added uuid()
-  email     String   @unique
+  email     String   @unique 
   password  String
   name      String?
   slug      String @unique

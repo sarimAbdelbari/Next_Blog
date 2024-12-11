@@ -39,7 +39,7 @@ export default function UserForm() {
       
       setFormData({ email: "", password: "", name: "", slug: "" });
     } catch (error) {
-      setMessage({text:"Failed to create user. Please try again." , color:false});
+      setMessage({text:`${error}.` , color:false});
       console.log(error)
     }
   };
